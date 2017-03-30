@@ -1,0 +1,119 @@
+	section, header, footer {display: block;}
+	body {
+		font-family: 'Varela Round', sans-serif;
+		color: #333333;
+		line-height: 1.5;
+		font-size: 16px;
+		background:#26ae5f;
+		color:white;
+		-moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.21);
+		-webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.21);
+	}
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	.glyph {
+		float: left;
+		text-align: center;
+		padding: .5em;
+		margin: 0 .5em;
+		width: 7em;
+		border-radius: .375em;
+		top:0;
+		position:relative;
+		-webkit-transition:0.2s ease-in;
+		-o-transition:0.2s ease-in;
+		-moz-transition:0.2s ease-in;
+		-ie-transition:0.2s ease-in;
+		transition:0.2s ease-in;
+	}
+	.glyph input {
+		width: 100%;
+		text-align: center;
+		font-family: consolas, monospace;
+		border-radius:3px;
+		border:none;
+		padding:4px;
+		background:#26AE5C;
+		color:#26AE5C;
+		-webkit-transition:0.2s ease-in;
+		-o-transition:0.2s ease-in;
+		-moz-transition:0.2s ease-in;
+		-ie-transition:0.2s ease-in;
+		transition:0.2s ease-in;
+	}
+	.glyph:hover input {
+		background:#26ae5f;
+		padding:4px;
+		color:#ffffff;
+	}
+	.glyph:hover {
+		-webkit-transition: all 0.5s ease-out;
+		background:#222821;
+		color:#fff;
+		text-shadow: none;
+		-moz-text-shadow: none;
+		-webkit-text-shadow: none;
+		top:-5px;
+		position:relative;
+	}
+	.glyph input, .mtm {
+		margin-top: .75em;
+	}
+	.w-main {
+		width: 770px;
+		text-align:center;
+	}
+	.centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fs1 {
+		font-size: 3em;
+	}
+	header {
+		margin: 2em 0;
+		padding-bottom: .5em;
+	}
+	header h1 {
+		font-size: 3.5em;
+		font-weight: normal;
+	}
+	.clearfix:before, .clearfix:after { content: ""; display: table; }
+	.clearfix:after, .clear { clear: both; }
+	footer {
+		margin: 2em 0;
+		padding: 2em 0;
+		border-top: 1px solid rgb(60, 189, 114);
+		box-shadow: 0 -1px rgb(33, 165, 89);
+	}
+	a, a:visited {
+		color: #ffffff; text-decoration:none;
+	}
+	a:hover, a:focus {color: #222821; text-decoration:none;}
+	.box1 {
+		display: inline-block;
+		width: 14em;
+		padding: .25em .5em;
+		margin: .5em 1em .5em 0;
+		text-align:left;
+		
+	}
+	.box1 span { 
+		font-size:2em;
+		position: relative;
+		top: 0.25em;
+		margin-right: 0.1em;
+	}
+	
+	.snippet {
+		padding: 2em;
+		background-color: black;
+		margin: auto;
+		width: 60%;
+		overflow-x: auto;
+	}

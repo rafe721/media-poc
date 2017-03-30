@@ -1,0 +1,483 @@
+/* CSSTerm.com Flyout CSS menu */
+/* ----------------------------------------------------------------------- 
+	Flyout menu inside - side nav
+   ----------------------------------------------------------------------- */
+.wrapper {
+	position: absolute;
+	top: 0; /* to prevent vertical scroll */
+	left: 0; /* to prevent horizontal scroll */
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+/* ----------------------------------------------------------------------- 
+	side nav
+   ----------------------------------------------------------------------- */
+.side_nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 15%;
+	height: 100%;
+	background: #005555;
+}
+
+/* ----------------------------------------------------------------------- 
+	Logo inside - side nav
+   ----------------------------------------------------------------------- */
+.side_nav  .cd_logo {
+	padding: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #5c4b51;
+}
+
+/* ----------------------------------------------------------------------- 
+	Flyout menu inside - side nav
+   ----------------------------------------------------------------------- */
+#flyout_menu {
+	font-weight: 600;
+	width: 100%; }
+
+#flyout_menu ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+#flyout_menu ul li.hover,
+#flyout_menu ul li:hover { position: relative; z-index: 599; }
+
+#flyout_menu ul ul{
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+}
+
+#flyout_menu ul li:hover > ul { visibility: visible; }
+
+#flyout_menu ul ul { top: 0; left: 100%; }
+
+#flyout_menu span, #flyout_menu a {
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none; }
+
+#flyout_menu li { background: #005555; }
+#flyout_menu li:hover, #flyout_menu li.active { background: #5FD367; }
+
+#flyout_menu a {
+    color: #FFF;
+    line-height: 160%;
+    padding: 16px 8px 16px 28px;
+    width: 164px; }
+
+#flyout_menu ul ul li {
+	background: #006C6C;
+	border-bottom: 1px solid #007171; }
+
+#flyout_menu ul ul li:hover { background: #5FD367; }
+
+/* ----------------------------------------------------------------------- 
+	Content
+   ----------------------------------------------------------------------- */
+   
+#main_content {
+	position: relative;
+	top: 0;
+	float: right;
+	width: 85%;
+	height: 100%;
+	background-color: #CCF;
+	padding: 0;
+}
+/* ----------------------------------------------------------------------- 
+	Flyout menu inside - side nav
+   ----------------------------------------------------------------------- */
+.content_wrapper {
+	position: relative;
+	top: 0; /* to prevent vertical scroll */
+	left: 0; /* to prevent horizontal scroll */
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.content_options {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 20%;
+	height: 100%;
+	background: #005555;
+}
+.content_options  .content_title {
+	padding: 0;
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+.content_options  .content_search {
+	padding: 0;
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+}
+
+.content_options .content_list ul {
+	margin: 0;
+	padding: 0;
+	width:100%;
+	max-height: 80%;
+	list-style-type: none;
+	overflow-y: auto;
+}
+
+.content_options .content_list ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 10.5px 11px;
+	background-color: #005555;
+	display:block;
+}
+
+.content_options .content_list ul li a:visited {
+	color: white;
+}
+
+.content_options .content_list ul li a:hover, .content_list ul li .current {
+	color: white;
+	background-color: #5FD367;
+}
+
+.content_data {
+	top: 0;
+	float: right;
+	width: 80%;
+	height: 100%;
+	background-color: green;
+	padding: 0;
+}
+
+
+/*----------------------------------------------
+css settings for HTML div exactCenter 
+------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/* #blur{
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	top: 0;
+	left: 0;
+	display: none;
+	/* display: block; */
+	position: fixed;			
+	background-color: #313131;
+	overflow:auto;
+} */
+.overlay {
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	top: 0;
+	left: 0;
+	display: none;
+	/* display: block; */
+	position: fixed;			
+	background-color: #313131;
+	overflow:auto;
+}
+
+img#close{
+	z-index: 6;
+	position: absolute;
+	right: -14px;
+	top: -14px;
+	cursor: pointer;
+}
+
+div#popupContact{
+	z-index: 6;
+	position: absolute; 
+	/* left: 50%;
+	top: 15%;
+	margin-left: -202px; */
+	/* to align contents of PopUpContact ID to the center regardless of their size */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* center alignment ends */
+	font-family: 'Raleway', sans-serif;
+}
+ 
+#popupContact .dialog {
+	max-width: 650px;
+	min-width: 250px;
+	padding: 10px 50px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	font-family:raleway;
+	background-color: white;
+}
+
+#popupContact form{
+	
+}
+
+#popupContact p{
+	text-align: justify;
+	line-height: 170%;
+	text-justify: inter-word;
+	margin-top: 30px;
+}
+#popupContact p strong{
+	font-weight: bold;
+}
+#popupContact p:only-of-type {
+	margin-bottom: 30px;
+}
+
+#popupContact .dialog h2{
+	background-color: #FEFFED;
+	padding: 25px 35px;
+	margin: -10px -50px;
+	text-align:center;
+	border-radius: 10px 10px 0 0;
+}
+
+#popupContact .dialog hr{
+	margin: 10px -50px;
+	border: 0; 
+	border-top: 1px solid #ccc;
+}
+ 
+#popupContact input[type=text]{
+	width:100%;
+	padding: 10px;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	padding-left: 30px;
+	font-size: 16px;
+	font-family:raleway;
+} 
+
+#popupContact #name{
+	background-image: url('../images/name.jpg');
+	background-repeat: no-repeat;
+	background-position: 5px 7px;
+}
+
+#popupContact #display_name{
+	background-image: url('../images/email.png');
+	background-repeat: no-repeat;
+	background-position: 5px 7px;
+	margin-bottom: 30px;
+}
+
+#popupContact textarea{
+	background-image: url('../images/msg.png');
+	background-repeat: no-repeat;
+	background-position: 5px 7px;
+	width:82%;
+	height: 95px;
+	padding: 10px;
+	resize:none;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	padding-left: 40px;
+	font-size: 16px;
+	font-family:raleway;
+	margin-bottom: 30px;
+}
+
+#popupContact #submit{
+	text-decoration:none;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	text-align:center;
+	display:block;
+	background-color:#FFBC00;
+	color: white;
+	border: 1px solid #FFCB00;
+	padding: 10px 0;
+	font-size:20px;
+	cursor:pointer;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+#popupContact #submit:last-of-type {
+	margin-bottom: 30px;
+}
+#popupContact #submit:only-of-type {
+	margin-bottom: 30px;
+}
+#popupContact span{
+	color:red;
+	font-weight:bold;
+}
+
+#popupContact button{
+	width:10%;
+	height:45px;
+	border-radius:3px;
+	background-color: peru;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	cursor:pointer;
+}
+
+#popupContact #button{
+	text-decoration:none;
+	width:100%;
+	text-align:center;
+	display:block;
+	background-color:#FFBC00;
+	color: white;
+	border: 1px solid #FFCB00;
+	padding: 10px 0;
+	font-size:20px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+/*----------------------------------------------
+css settings for HTML div exactCenter 
+------------------------------------------------*/
+/*form styles*/
+#msform {
+	margin: auto;
+	text-align: center;
+	position: relative;
+	min-width: 60%;
+}
+
+#msform img#close{
+	z-index: 6;
+	position: absolute;
+	right: -14px;
+	top: -14px;
+	cursor: pointer;
+}
+
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	
+	box-sizing: border-box;
+	/* width: 80 */
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	/* width: 100px; */
+	width: 40%;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}

@@ -1,0 +1,43 @@
+
+$("#table-filters>ul>li.active").removeClass("active");
+
+Grid Effect
+https://tympanus.net/codrops/2014/03/27/3d-grid-effect/
+https://tympanus.net/Development/SearchUIEffects/index8.html
+https://codyhouse.co/gem/3d-bold-navigation/
+https://tympanus.net/codrops/2013/05/17/horizontal-slide-out-menu/
+
+Awesome Modal
+https://tympanus.net/codrops/2014/05/12/morphing-buttons-concept/
+
+page loading stuffs
+https://tympanus.net/Development/PageLoadingEffects/index13.html
+
+infinite scroll effects
+https://tympanus.net/codrops/2014/05/15/recreating-the-design-samsung-grid-loading-effect/
+
+image overlay options
+https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+https://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+
+inline anchor links n stuff
+https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
+
+notification
+https://tympanus.net/codrops/2014/07/23/notification-styles-inspiration/
+
+Icons
+https://tympanus.net/Development/AnimatedSVGIcons/
+
+
+Android Video View
+http://mrbool.com/how-to-play-video-formats-in-android-using-videoview/28299
+https://mobiarch.wordpress.com/2014/02/18/showing-fullscreen-video-in-android/
+
+JSON
+https://www.codeproject.com/Articles/267023/Send-and-receive-json-between-android-and-php
+http://www.androidhive.info/2012/05/how-to-connect-android-with-php-mysql/
+https://fuchme.net/2016/05/04/connection-between-php-server-and-android-client-using-http-and-json/
+
+download File
+https://ssdtutorials.com/courses/download-file-with-php

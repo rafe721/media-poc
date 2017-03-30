@@ -1,0 +1,5 @@
+select a.media_id, a.slot_no, a.display_id, b.media_name from media_on_display as a LEFT join media as b ON b.media_id = a.media_id
+
+select a.media_id, a.slot_no, a.display_id, b.media_name from media_on_display as a LEFT OUTER join media as b ON b.media_id = a.media_id WHERE a.display_id=2
+
+select a.media_id, a.slot_no, a.display_id, b.media_name from media_on_display as a LEFT OUTER join media as b ON b.media_id = a.media_id WHERE a.display_id=15 AND b.media_name LIKE '%get%'

@@ -1,0 +1,186 @@
+
+.surface_blur {
+	-webkit-transition: all .1s; /* Safari */
+    transition: all .1s;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+.surface_no_blur {
+	-webkit-transition: all .1s; /* Safari */
+    transition: all .1s;
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	-ms-filter: blur(0px);
+	filter: blur(0px);
+}
+
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 18px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button:focus {
+  outline: none
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	-webkit-transition: all .5s; /* Safari */
+    transition: all .5s;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* -webkit-animation-name: remodal-opening-keyframes;
+    -webkit-animation-duration: 0.4s;
+    animation-name: remodal-opening-keyframes;
+    animation-duration: 0.4s */
+}
+
+.modal-content-opening {
+	-webkit-animation-name: remodal-opening-keyframes;
+    -webkit-animation-duration: 0.4s;
+    animation-name: remodal-opening-keyframes;
+    animation-duration: 0.4s;
+	display: block;
+}
+
+.modal-content-closing {
+	animation-name: remodal-closing-keyframes;
+	-webkit-animation-duration: 0.4s;
+    animation-name: remodal-closing-keyframes;
+    animation-duration: 0.4s;
+	/* display: none; */
+}
+
+.modal-width-40 {
+    width: 40%;
+}
+
+.modal-width-80 {
+    width: 80%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+	display: inline-block;
+    width: 100%;
+	padding: 7px 10px;
+}
+
+.clearfix::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-footer button {
+	color: #fff;
+	background-color: #6496c8;
+	text-shadow: -1px 1px #417cb8;
+	border: none;
+}
+
+.modal-footer button:hover,
+.modal-footer button.hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+
+.modal-footer button:active,
+.modal-footer button.active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
+}
+
+@keyframes remodal-opening-keyframes {
+  from {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.95);
+    opacity: 0;
+    filter: blur(0);
+  }
+}
